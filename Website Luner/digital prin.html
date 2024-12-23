@@ -1,0 +1,220 @@
+!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ดิจิตอลปริ้นท์ - Luner</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f2e8;
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        header {
+            background-color: #ffe6cc;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+        .user-actions {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            color: #804d2b;
+        }
+
+        .user-actions span {
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #fff5eb;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #804d2b;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e67300;
+        }
+        
+
+        .promotion-tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #ffe6cc;
+            padding: 10px 0;
+            gap: 10px;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px 10px;
+            cursor: pointer;
+            background-color: #804d2b;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #6b3f24;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab.active {
+            background-color: #804d2b;
+            color: #fff;
+        }
+
+        .tab .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .tab .subtitle {
+            font-size: 12px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 24px;
+            color: #804d2b;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #804d2b;
+        }
+        
+        
+
+        footer {
+            background-color: #ffe6cc;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #804d2b;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Luner</div>
+        <div class="user-actions">
+            <span>เข้าสู่ระบบ / ลงทะเบียน</span>
+            <span>ภาษาไทย ▼</span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+
+   
+
+    <!-- Navigation -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="promotions.html">โปรโมชั่น</a>
+        <a href="cards.html">การ์ด&เครื่องเขียน</a>
+        <a href="photobook.html">โฟโต้บุ๊ค</a>
+        <a href="lifestyle.html">ไลฟ์สไตล์</a>
+        <a href="photo-editing.html">ปรับรูปภาพ</a>
+        <a href="wedding.html">งานแต่ง</a>
+    </nav>
+
+    <style>
+        /* CSS สำหรับเมนูหลัก (ยังคงเดิม) */
+        nav {
+            background-color: #fff5eb;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #804d2b;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        
+        nav a:hover {
+            color: #e67300;
+        }
+        </style>
+    <!-- Content -->
+    <div class="content">
+        <h1>ดิจิตอลปริ้นท์</h1>
+
+        <nav>
+            <a href="book.html">Book</a>
+            <a href="acrylit.html">ACRYLIC PRODUCT</a>
+            <a href="paper.html">PAPER PRODUCT</a>
+            <a href="sticker.html">STICKER PRODUCT</a>
+            <a href="sign&displan.html">SIGN & DISPLAY</a>
+            
+        </nav>
+        <section class="products">
+            <div class="product">
+              <img src="example1.jpg" alt="Product 1">
+              <h2>ของคุณแอคริลิค</h2>
+              <p>รายละเอียดสินค้า</p>
+            </div>
+            <div class="product">
+              <img src="example2.jpg" alt="Product 2">
+              <h2>กรอบติดอะคริลิค</h2>
+              <p>รายละเอียดสินค้า</p>
+            </div>
+            <!-- เพิ่มสินค้าตามต้องการ -->
+
+      
+
+    
+    
+
+</body>
+</html>

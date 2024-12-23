@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalapix Clone</title>
+    <style>
+        /* CSS: การออกแบบ */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffd1dc;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #ff4081;
+            margin: 0;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #ffe6e9;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: #ff4081;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff4081;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .products {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .products h3 {
+            text-align: center;
+            color: #ff4081;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h4 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            padding: 8px 15px;
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #ffd1dc;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lalapix Clone</h1>
+    <nav>
+        <a href="#">หน้าหลัก</a>
+        <a href="#">สินค้า</a>
+        <a href="#">โปรโมชั่น</a>
+        <a href="#">ติดต่อเรา</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>ออกแบบและพิมพ์สินค้าในแบบของคุณ</h2>
+    <p>ปรับแต่งง่าย ส่งตรงถึงบ้านคุณ</p>
+    <button>เริ่มต้นเลย</button>
+</div>
+
+<section class="products">
+    <h3>สินค้าของเรา</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Photobook">
+            <h4>Photobook</h4>
+            <p>บันทึกความทรงจำพิเศษในเล่มเดียว</p>
+            <button>ดูเพิ่มเติม</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Acrylic">
+            <h4>Acrylic</h4>
+            <p>ของขวัญที่โดดเด่น</p>
+            <button>ดูเพิ่มเติม</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Calendar">
+            <h4>ปฏิทิน</h4>
+            <p>เริ่มต้นปีใหม่ด้วยปฏิทินส่วนตัว</p>
+            <button>ดูเพิ่มเติม</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300x200" alt="Photo Prints">
+            <h4>Photo Prints</h4>
+            <p>พิมพ์ภาพถ่ายในแบบของคุณ</p>
+            <button>ดูเพิ่มเติม</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Lalapix Clone - สร้างสรรค์สินค้าปรับแต่งด้วยตัวเอง
+</footer>
+
+</body>
+</html>
