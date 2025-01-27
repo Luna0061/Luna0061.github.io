@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การ์ด&เครื่องเขียน</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/logo42.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo42.jpg"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f2e8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffe6cc;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #804d2b;
+        }
+
+        header .user-actions {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        header .user-actions span {
+            color: #804d2b;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content h1, .content h2 {
+            font-size: 36px;
+            color: #804d2b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px; 
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #804d2b; 
+            text-decoration: none; 
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease; 
+        }
+
+        nav a:hover {
+            color: #cc6600; 
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .grid.horizontal {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .grid-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 300px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .grid-item p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .anth-links a {
+            text-decoration: none; /* เอาขีดเส้นใต้ลิงค์ออก */
+            color: #804d2b;
+            font-weight: bold;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luner</h1>
+        <div class="anth-links">
+            <a href="Login.html">Login/Signup</a>
+            <a href="order.html">🛒</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>ไลฟ์สไตล์</h1>
+        <nav>
+            <a href="#">LIFE-STYLE</a>
+            <a href="#">ACCESSORIES</a>
+            
+            
+        </nav>
+    </div>
+
+
+    <div class="content">
+        <h2>"LIFE-STYLE"</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/product_ipad.webp" alt="lifestyle">
+                <h3>เคสไอแพด</h3>
+                <p>เคสไอแพดกันกระแทกมาพร้อมกับที่ใส่ปากกา</p>
+                <p> สามารถสั่งและออกแบบด้วยตัวเอง ไม่ซ้ำใครแน่นอน</p>
+            </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/mug-400x400.jpg" alt="lifestyle">
+                <h3>แก้วมัคสกรีน</h3>
+                <p>แก้วกาแฟสุดพิเศษที่คุณออกแบบเองได้ไม่ว่าจะให้เป็น</p>
+                <p>ของขวัญหรือเก็บไว้ใช้เองก็น่าประทับใจแน่นอน</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/home/all-product/Home-all-mouse-pad" alt="lifestyle">
+                <h3>แผ่นรองเม้าส์</h3>
+                <p>แผ่นรองเม้าส์ที่คุณสามารถออกแบบด้วยตนเอง คุณภาพ</p>
+                <p>พรีเมี่ยมระดับเกมเมอร์</p>
+            </div>
+        </div> 
+        
+        <div class="content">
+            <h2>"ACCESSORIES"</h2>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/pin-400x400.jpg" alt="accessories">
+                    <h3>เข็มกลัด</h3>
+                    <p>ออกแบบเข็มกลัดสุดคลูด้วยตัวคุณเอง แบบไม่ซ้ำใครและ</p>
+                    <p>ไม่มีขั้นต่ำ ไม่ต้องพรีออเดอร์ สั่งและรอรับที่บ้านได้เลย</p>
+                </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/keyring-400x400.jpg" alt="accessories">
+                    <h3>พวงกุญแจอะคริลิก [เทมเพลต]</h3>
+                    <p>พวงกุญแจอะคริลิกที่มีความแข็งแรง น้ำหนักเบา สามารถครีเอทได้หลากหลาย </p>
+                    <p>และนำไปห้อยกระเป๋าได้ทุกวันโดยไม่มีเบื่อ</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/hand-mirror-400x400.jpg" alt="accessories">
+                    <h3>กระจกทรงกลม</h3>
+                    <p>กระจกพกพาทรงกลมพิมพ์ลายสุดน่ารักที่ออกแบบด้วย</p>
+                    <p>ตัวคุณเอง สร้างสรรค์ได้ไม่เหมือนใคร สั่งเลยไม่มีขั้นต่ำ</p>
+                </div>
+            </div> 
+            <div class="grid">
+                <div class="grid-item">
+                    <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/bottle-opener-400x400.jpg" alt="accessories">
+                    <h3>ที่เปิดขวดทรงกลม</h3>
+                    <p>ที่เปิดขวดทรงกลมที่เป็นแม่เหล็กติดตู้เย็นในตัวขนาด</p>
+                    <p>กะทัดรัดใช้งานสะดวก สั่งได้ไม่มีขั้นต่ำ</p>
+                </div>
+            </div> 
+        </div>
+       
+        
+    </body>
+
+</html>

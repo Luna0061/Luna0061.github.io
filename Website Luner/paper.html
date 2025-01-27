@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paper</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/img/logo42.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo42.jpg"/>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f2e8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffe6cc;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #804d2b;
+        }
+
+        header .user-actions {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        header .user-actions span {
+            color: #804d2b;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .content h1, .content h2 {
+            font-size: 36px;
+            color: #804d2b;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            margin-top: 20px; 
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #804d2b; 
+            text-decoration: none; 
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease; 
+        }
+
+        nav a:hover {
+            color: #cc6600; 
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .grid.horizontal {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .grid-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 300px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .grid-item p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .anth-links a {
+            text-decoration: none; /* เอาขีดเส้นใต้ลิงค์ออก */
+            color: #804d2b;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luner</h1>
+        <div class="anth-links">
+            <a href="Login.html">Login/Signup</a>
+            <a href="order.html">🛒</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>ดิจิตอลปริ้นท์</h1>
+        <nav>
+            <a href="book.html">BOOK</a>
+            <a href="acrylit.html">ACRYLIC PRODUCT</a>
+            <a href="paper.html">PAPER PRODUCT</a>
+            <a href="sticker.html">STICKER PRODUCT</a>
+            <a href="sign&displan.html">SIGN & DISPLAY</a>
+        </nav>
+    </div>
+
+
+    <div class="content">
+        <h2>"PAPER PRODUCT"</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/DIGITAL-PRINT/Brochure/Photo-2.webp" alt="PAPER">
+                <h3>โบรชัวร์</h3>
+                <p>โบรชัวร์ เริ่มต้นที่ 50 ใบ ยิ่งสั่งจำนวนมาก ยิ่งคุ้มมาก</p>
+                <p>ขนาด A5 และ A4 ไม่ว่าคุณจะทำโฆษณาสินค้า หรือโปร</p>
+            </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://cdn3.getprintbox.com/pbx2-lalapix/media/productimage/7a0292d4-e0b5-4453-82bb-4ffcb0ad88e1/upload%20your%20design_thumb_900x900" alt="PAPER">
+                <h3>นามบัตร</h3>
+                <p>นามบัตรวัสดุพรีเมี่ยม งานพิมพ์คุณภาพดีที่สุด มี</p>
+                <p>เทมเพลตให้เลือกเหมาะกับทุกธุรกิจของคุณ</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/all-product/thumbnail/All_Bookmark.webp" alt="PAPER">
+                <h3>ที่คั่นหนังสือ</h3>
+                <p>ที่คั่นหนังสือ (Bookmark) สามารถทำลวดลายเดียวกับ</p>
+                <p>หนังสือนิยายของคุณ ยิ่งสั่งมาก ยิ่งถูกมาก</p>
+            </div>
+        </div>    
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/STATIONARY/CARD/Standard-Postcard/postcard-1.webp" alt="PAPER">
+                <h3>โปสการ์ด</h3>
+                <p>ออกแบบโปสการ์ด สร้างสรรค์ผลงานด้วยตัวคุณเอง</p>
+                <p>เพียงแค่อัปโหลดรูปภาพจากมือถือของคุณ เท่านี้ก็ได้</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://cdn3.getprintbox.com/pbx2-lalapix/media/productimage/78dfab60-268a-43d1-8285-c9d93ac2dd54/1018%20dress%20up_thumb_900x900" alt="PAPER">
+                <h3>การ์ดขอบคุณ</h3>
+                <p>การ์ดขอบคุณ ส่งต่อความรู้สึกดีๆให้ผู้รับด้วยการ์ด</p>
+                <p>ขอบคุณ ที่คุณสามารถออกแบบได้ไม่ซ้ำใคร</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="https://cdn3.getprintbox.com/pbx2-lalapix/media/productimage/0261b710-0c5d-414c-b4cb-1759cbeb6846/slogan_thumb_900x900" alt="PAPER">
+                <h3>สโลแกน</h3>
+                <p>สโลแกน (Slogan) ป้ายเชียร์ ป้ายโปรเจค สั่งทำที่ไหนเมื่อ</p>
+                <p>ไหรก็ได้ ยิ่งสั่งมาก ยิ่งถูกมาก ทำเป็นโปรเจคให้ไอดอลที่คุณชื่นชอบ</p>
+            </div>
+        </div>
+</body>
+</html>

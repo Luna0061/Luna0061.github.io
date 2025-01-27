@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รถเข็นสินค้า</title>
+    <style>
+        /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        header .cart-icon a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        header .cart-icon img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .cart {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart table th, .cart table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .cart-summary {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ร้านค้าออนไลน์</h1>
+        </div>
+        <div class="cart-icon">
+            <a href="#">
+                <img src="img/https://www.phanpha.com/cart.png" alt="Cart">
+                <span id="cart-count">0</span> <!-- แสดงจำนวนสินค้าที่อยู่ในรถเข็น -->
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <h2>รถเข็นของคุณ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>สินค้า</th>
+                        <th>ราคา</th>
+                        <th>จำนวน</th>
+                        <th>รวม</th>
+                        <th>ลบ</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- สินค้าในรถเข็นจะแสดงที่นี่ -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <p>รวม: <span id="total-price">0</span> บาท</p>
+                <button id="checkout-btn">ไปที่การชำระเงิน</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // script.js
+        let cart = [
+            { id: 1, name: 'PHOTOBOOK', price: 100, quantity: 2 },
+            { id: 2, name: 'CARD-PAPER', price: 200, quantity: 1 }
+        ];
+
+        function renderCart() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = ''; // Clear the cart items
+            
+            let totalPrice = 0;
+            
+            cart.forEach(item => {
+                const row = document.createElement('tr');
+                
+                row.innerHTML = `
+                    <td>${item.name}</td>
+                    <td>${item.price} บาท</td>
+                    <td><input type="number" value="${item.quantity}" min="1" data-id="${item.id}" class="quantity-input"></td>
+                    <td>${item.price * item.quantity} บาท</td>
+                    <td><button class="remove-btn" data-id="${item.id}">ลบ</button></td>
+                `;
+                
+                cartItemsContainer.appendChild(row);
+                totalPrice += item.price * item.quantity;
+            });
+            
+            document.getElementById('total-price').innerText = totalPrice;
+            document.getElementById('cart-count').innerText = cart.length;
+        }
+
+        function updateQuantity(event) {
+            if (event.target.classList.contains('quantity-input')) {
+                const itemId = parseInt(event.target.getAttribute('data-id'));
+                const newQuantity = parseInt(event.target.value);
+                const item = cart.find(item => item.id === itemId);
+                if (item) {
+                    item.quantity = newQuantity;
+                    renderCart();
+                }
+            }
+        }
+
+        function removeItem(event) {
+            if (event.target.classList.contains('remove-btn')) {
+                const itemId = parseInt(event.target.getAttribute('data-id'));
+                cart = cart.filter(item => item.id !== itemId);
+                renderCart();
+            }
+        }
+
+        document.getElementById('cart-items').addEventListener('input', updateQuantity);
+        document.getElementById('cart-items').addEventListener('click', removeItem);
+
+        // Initial render
+        renderCart();
+    </script>
+</body>
+</html>

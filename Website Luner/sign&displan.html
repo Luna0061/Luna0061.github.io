@@ -43,13 +43,14 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
+            
         }
 
-        .content h1 {
+        .content h1, .content h2 {
             font-size: 36px;
             color: #804d2b;
             text-align: center;
-            margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         nav {
@@ -77,9 +78,15 @@
             flex-wrap: wrap;
         }
 
+        .grid.horizontal {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
         .grid-item {
             flex: 1;
             min-width: 300px;
+            max-width: 300px;
             background: #fff;
             border: 1px solid #ccc;
             border-radius: 8px;
@@ -88,20 +95,24 @@
         }
 
         .grid-item img {
-            width: 300px;    /* กำหนดความกว้างให้เป็น 300px */
-            height: 200px;   /* กำหนดความสูงให้เป็น 200px */
-            object-fit: cover; /* ให้รูปภาพครอบพื้นที่ในกรอบให้เต็ม */
-            border-radius: 8px; /* ทำมุมโค้ง */
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
         }
+
+        .grid-item p {
+            margin: 10px 0;
+            color: #333;
+        }
+
         .anth-links a {
             text-decoration: none; /* เอาขีดเส้นใต้ลิงค์ออก */
             color: #804d2b;
             font-weight: bold;
         }
 
-        
-
-        
+       
     </style>
 </head>
 <body>
@@ -112,6 +123,7 @@
             <a href="order.html">🛒</a>
         </div>
     </header>
+
     <div class="content">
         <h1>ดิจิตอลปริ้นท์</h1>
         <nav>
@@ -123,55 +135,18 @@
         </nav>
     </div>
 
-    <div class="content">
-        <h2>"BOOK"</h2>
-        <div class="grid">
-            <div class="grid-item">
-                <img src="https://lalapix.getprintbox.com/img/cms/Blog/how-to-print-your-book/Photo-11.jpg" alt="book">
-                <p>หนังสือนิยาย</p>
-                <p>รับผลิตพิมพ์หนังสือทุกชนิด นิยาย แฟนฟิค </p>
-                <p>แฟนอาร์ต พิมพ์ขาว-ดำ ไม่มีขั้นต่ำ เช็คราคาได้ทันที</p>
-            </div>
-        
-        </div>
-    </div>
 
     <div class="content">
-        <h2>"ACRYLIC PRODUCT"</h2>
+        <h2>"SIGN & DISPLAY"</h2>
         <div class="grid">
             <div class="grid-item">
-                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/LIFE-STYLE/custom-acrylic-keyring/Photo-1" alt="Acrylic">
-                <p>หนังสือนิยาย</p>
-                <p>นำลายการ์ตูนหรือรูปศิลปินที่คุณชื่นชอบ มาทำพวงกุญแจ </p>
-                <p>อะคริลิกที่มีเพียงชิ้นเดียวในโลก</p>
-            </div>
-        
-        </div>
-        
-        <br>
-
-    <div class="content"> 
-        <h2>"PAPER PRODUCT"</h2>
-        <div class="grid">
-            <div class="grid-item">
-               <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/DIGITAL-PRINT/Brochure/Photo-2.webp"  alt="paper">
-               <p> โบรชัวร์</p>
-               <p>โบรชัวร์ เริ่มต้นที่ 50 ใบ ยิ่งสั่งจำนวนมาก ยิ่งคุ้มมาก ขนาด A5 และ A4 </p>
-               <p> ไม่ว่าคุณจะทำโฆษณาสินค้า หรือโปรโมชั่น ก็สามารถทำได้</p> 
+                <img src="https://asset.lalapix.com/asset/image/03-Landing-Page/LIFE-STYLE/X-Stand/Photo-1.webp" alt="SIGN">
+                <h3>X Stand</h3>
+                <p>X Stand พร้อมขาตั้งเคลื่อนย้ายและพับเก็บง่าย ใช้ได้ใน </p>
+                <p>ทุกโอกาส ทุกรูปแบบ โปรโมชั่น นิทรรศการ หรือป้ายวันเกิดศิลปิน</p>
             </div>
         </div>
+    </body>
 
-        
-    </div>   
-
-    
-    
-
-
-    
-    
-
-
-   
-</body>
 </html>
+    
